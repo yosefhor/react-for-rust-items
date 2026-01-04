@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+console.log('start');
 /**
  * API Client - Centralized HTTP request handler
  * Standardizes all communication with the Rust backend
