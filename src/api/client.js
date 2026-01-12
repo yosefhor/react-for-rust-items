@@ -1,13 +1,10 @@
-import dotenv from 'dotenv';
-dotenv.config();
-console.log('start');
 /**
  * API Client - Centralized HTTP request handler
  * Standardizes all communication with the Rust backend
  */
 
 // Backend base URL - update this to match your Rust server
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 /**
  * Handles both successful and error responses from the backend
